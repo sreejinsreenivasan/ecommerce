@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="m-10">
+    <span
+        class="text-medium font-semibold inline-block py-1 px-2 uppercase rounded text-indigo-600 bg-indigo-200 uppercase last:mr-0 mr-1">
+        {{refferal_code.code|upper}}
+    </span><span>is your refferal code</span>
+    <p>share the app and get Rs.10 credited to your wallet. :)</p>
+
+    <div class="mt-10">
+
+<button
+    class="text-green-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+    type="button" style="transition: all .15s ease">
+    <a href="{% url 'dashboard' %}">
+        return to dashboard
+    </a>
+</button></div>
+    </div>
+
+
+{% endblock %}
